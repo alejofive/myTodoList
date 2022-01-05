@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background: rgb(227, 233, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
+.container{
+  width: 375px;
   min-height: 100vh;
+  margin: auto;
   display: flex;
   flex-direction: column;
+   justify-content: center;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:10px 20px ;
+  color: white;
+  background: #af7eeb;
+}
+
+.caja-lista{
+  background: white;
+  padding: 20px 40px;
+  margin-top: 20px;
+}
+
+.lista{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.lista-text{
+  display: flex;
+  align-items: center;
+}
+
+.lista-text p{
+  font-size: 18px;
+  padding-left: 20px;
+  color: rgb(161, 169, 190);
+}
+
+.lista-icon{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(161, 169, 190);
+}
+
+.lista-icon .lista-icon-check{
+  color: #6767f3;
+}
+
+.lista-icon .lista-icon-times{
+  color: #a1a9be;
+}
+
+.lista-icon .edit{
+  color: #6767f3;
+}
+
+
+.lista-icon button{
+  color: #a1a9be;
+  font-size: 15px;
+  background: none;
+  border: 0;
+}
+
+.caja-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caja-input{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+}
+
+.item-input{
+  width: 70%;
+  display: flex;
+  margin-top: 20px;
+}
+
+.caja-input input{
+  border-radius: 10px;
+  border: 2px solid #cfa8ff;
+  padding: 5px 15px;
+  width: 100%;
+  height: 30px;
+}
+
+.item-input button{
+  background: #af7eeb;
+padding: 0 10px;
+  height: 30px;
+  border: none;
+  margin-left: 5px;
+  border-radius: 100px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.caja-btn{
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.caja-btn button{
+  margin-left: 10px;
+  background: white;
+  border: 1px solid #af7eeb;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: black;
+  transition: 0.5s;
 }
+
+.caja-btn .btn-estados :hover{
+  background: #af7eeb;
+  color: white;
+  transition: 0.5s;
+}
+
+.btn-estados .active {
+  background: #af7eeb;
+  color: white;
+}
+
